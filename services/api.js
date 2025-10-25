@@ -1,8 +1,24 @@
-// services/api.js
+// ⚙️ CONFIGURAÇÃO DE CONEXÃO COM A API
+// ====================================
+// 🔧 ATENÇÃO: Altere o IP abaixo (BASE_URL) conforme onde o projeto for executado.
+//
+// ▶ Se estiver rodando TUDO no mesmo computador (API + app):
+//    use: http://localhost:4000
+//
+// ▶ Se estiver rodando o app no celular (Expo Go) e a API no computador:
+//    use o IP local do computador (veja com "ipconfig" no Windows)
+//    Exemplo: http://10.49.3.25:4000
+//
+// ▶ Se a API estiver hospedada online:
+//    use o endereço HTTPS público do servidor.
+//
+// ====================================
+
+
 import axios from "axios";
 
-// ⚙️ Endereço da API (ajustado para sua rede)
-const BASE_URL = "http://10.49.3.25:4000";
+// ⚙️ Endereço da API
+const BASE_URL = "http://10.49.3.25:4000"; // <-- troque este IP se for rodar em outro PC
 
 const api = axios.create({
   baseURL: BASE_URL,
